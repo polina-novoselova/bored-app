@@ -5,11 +5,12 @@ const apiActivityLink = "https://www.boredapi.com/api/activity/";
 const findActivity = async () => {
   try {
     const response = await fetch(apiActivityLink);
-    const result = await response.json();
 
-    if (result.participants === 0) {
+    if (!response.ok) {
       return;
     }
+
+    const result = await response.json();
 
     const activityText = result.activity;
     renderActivityText(activityText);
