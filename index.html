@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" defer></script>
 
     <title>Bored App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="background-img">
-        <div id="random-text" class="random-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corporis sunt excepturi atque id. Quam facere es</div>
-        <button id="btn-find-activity" class="btn-find-activity"></button>
-    </div>      
-</body>
+        <p id="random-text" class="random-text"></p>
+      <svg class="circle-text" viewBox="-100 -100 400 400">
+        <path
+          id="text-path"
+          d="M100,100 m0,-100 a100,100 0 1,1 0,200 a100,100 0 1,1 0,-200"
+          fill="transparent"
+        />
+        <text>
+          <textPath class="circle-text_value" xlink:href="#text-path">
+            Are you bored? Click here!
+          </textPath>
+        </text>
+      </svg>
+      <button id="btn-find-activity" class="btn-find-activity"></button>
+    </div>
+  </body>
 </html>
