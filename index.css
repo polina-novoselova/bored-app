@@ -1,0 +1,41 @@
+body {
+  background-image: radial-gradient(circle, #aee0d3, #0a110b);
+  background-repeat: no-repeat;
+}
+
+.background-img {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 100vh;
+  background-image: url(./mudrets-img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.random-text {
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  font-size: 22px;
+  text-align: center;
+  width: 400px;
+}
+
+.btn-find-activity {
+  position: absolute;
+  top: 470px;
+  left: 115px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #e0da1b;
+  opacity: 0.1;
+  border-radius: 50%;
+}
+
+.btn-find-activity:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 0 20px 10px #ffcc00;
+  opacity: 0.5;
+}
